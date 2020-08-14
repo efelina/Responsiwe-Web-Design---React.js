@@ -29,13 +29,14 @@
     }       
   }
 
-@media (max-width: 350px) {        
-    .landing-page h1 {
+@media (max-width: 350px) {
+    .landing-page-shadow .container {
+        height: 55%;
+      }         
+    .landing-page h1 {    
         font-size: 30px;
-    }
-   
-  }
-
+    }   
+}
 
 .landing-page p, .landing-page h1 {
     color:#FFF;
@@ -47,13 +48,13 @@
     justify-content: center;
     align-items: center;
     width: 164px;
-    height: 40px;
+    height: 50px;
     border: 3px solid #FFFFFF;
     }
 
     @media (min-width: 768px) {
         .landing-page-shadow .container {
-            height: 25%;
+            height: 30%;
         }
         
         .landing-page p {
@@ -78,6 +79,6 @@
         }    
     
         .landing-page-shadow .container {
-            height: 35%;
+            height: 40%;
         }
     }

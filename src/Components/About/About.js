@@ -1,34 +1,37 @@
 import React from 'react';
 import './About.css';
+import AboutEmployee from '../AboutEmployee/AboutEmployee';
 
+const employees = [
+    {
+        name:"Anna Kowalska",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem imperdiet purus congue lacinia ac ut diam.",
+        pic:"https://cdn.pixabay.com/photo/2017/08/01/08/29/people-2563491_1280.jpg"
+    },
+
+    {
+        name:"Maria Nowak",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem imperdiet purus congue lacinia ac ut diam.",
+        pic:"https://cdn.pixabay.com/photo/2016/11/22/06/05/girl-1848454_1280.jpg"
+    },
+
+    {
+        name:"Marek Wiśniewski",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem imperdiet purus congue lacinia ac ut diam.",
+        pic:"https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"
+    }
+]
 
 function About() {
     return (
         <section id="about" className="about">
             <div className="container">
                 <h1> Nasi specjaliści </h1>
-                <div className="about-employee">                                  
-                    <div className="about-employee-pic"></div>
-                    <div className="about-employee-desc">
-                        <h2>Imię Nazwisko [dział]</h2>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel massa et lacus egestas cursus a 
-                          non magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a. Integer felis nisi, tempor 
-                          elementum lorem in, varius pellentesque ligula. Duis efficitur lacinia enim, non tincidunt libero ultrices in.
-                        </p>
-                    </div>
-                </div>                
-                <div className="about-employee">                                  
-                    <div className="about-employee-pic"></div>
-                    <div className="about-employee-desc">
-                        <h2>Imię Nazwisko [dział]</h2>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel massa et lacus egestas cursus a 
-                          non magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a. Integer felis nisi, tempor 
-                          elementum lorem in, varius pellentesque ligula. Duis efficitur lacinia enim, non tincidunt libero ultrices in.
-                        </p>
-                    </div>                
-                </div>
+                    {
+                        employees.map(employee => {
+                          return <AboutEmployee name={employee.name} desc={employee.desc} pic={employee.pic}/>  
+                        })
+                    }
             </div>
         </section>
     )
