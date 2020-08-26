@@ -14,10 +14,6 @@
     }       
   }
 
-.about-employee-desc h2  {
-    margin-bottom: 10%;
-  }
-
 .offer .centering-box {  
     display: flex;
     justify-content: center;
@@ -34,68 +30,29 @@
    
 }
 
-.box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 198px;
-    height: 194px;
-    background-color: #F1F1F1;
-    transition:linear;
-    transition-duration: 0.5s;
-}
-
-.box:hover {
-    transform: scale(1.05);
-}
-
-
-
-.point {
-    position: absolute;
-    top: -11px;
-    left:-11px;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: #E07A64;
-
-}
 @media (min-width: 768px) {
     .offer h1 {
         margin-bottom: 10%;
         text-align: left;
     } 
-
-    .about-employee-desc h2  {
-        margin-bottom: 10px;
-      }
     
      .box-container {
         display:grid;
         grid-template-columns: 198px 198px;
         grid-template-rows: 194px 194px 194px;
-        gap: 63px;           
-       
+        gap: 63px;          
     }
 }
 
 @media (min-width: 1200px) {
-    .offer {
-        height: 734px;
-    }
-
     .offer h1 {
-        margin-bottom: 15%;
-        
+        margin-bottom: 15%;        
     }
 
     .box-container {
         display:grid;
         grid-template-columns: 198px 198px 198px;
         grid-template-rows: 194px 194px;
-        gap: 63px;           
-    
+        gap: 63px;       
     }
 } 

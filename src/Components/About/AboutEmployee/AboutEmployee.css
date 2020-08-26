@@ -31,13 +31,20 @@
     text-align: justify;
   }
 
+  .about-employee-desc h2  {
+    margin-bottom: 10%;
+  }
+
   @media (min-width: 768px) {  
     .about-employee {
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        margin-bottom: 0;
-        
+        margin-bottom: 0;        
+    }
+
+    .about-employee-desc h2  {
+      margin-bottom: 10px;
     }
 
     .about-employee-pic {
