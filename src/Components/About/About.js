@@ -1,12 +1,12 @@
 import React from 'react';
 import './About.css';
-import AboutEmployee from '../AboutEmployee/AboutEmployee';
+import AboutEmployee from './AboutEmployee/AboutEmployee';
 
 const employees = [
     {
         name:"Anna Kowalska",
         desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem imperdiet purus congue lacinia ac ut diam.",
-        pic:"https://cdn.pixabay.com/photo/2017/08/01/08/29/people-2563491_1280.jpg"
+        pic:""
     },
 
     {
