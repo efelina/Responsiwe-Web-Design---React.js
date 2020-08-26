@@ -50,11 +50,11 @@
     width: 164px;
     height: 50px;
     border: 3px solid #FFFFFF;
-    }
+}
 
     @media (min-width: 768px) {
         .landing-page-shadow .container {
-            height: 30%;
+            height: 45%;
         }
         
         .landing-page p {
@@ -63,7 +63,8 @@
     
         .landing-page h1, .landing-page p {
             width: 53%;
-          }
+        }
+
     }
 
     @media (min-width: 1200px) {
@@ -71,7 +72,7 @@
         .landing-page-btn {
             transition: 1s linear;
             transition-property: background, color;
-            }
+        }
             
         .landing-page-btn:hover {
             background-color: #FFF;
